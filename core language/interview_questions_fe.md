@@ -153,7 +153,6 @@ The new HTML5 specification allows browsers to prefetch some or all of a website
 Sandbox attribute enables extra restrictions on the content that can appear in the inline frame. The value of the attribute can either be an empty string (all the restrictions are applied), or a space-separated list of tokens that lift particular restrictions.
 
 ### Web Components
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #### What are Web Components and why would we use them?
 Web Components is a suite of different technologies allowing you to create reusable custom elements — with their functionality encapsulated away from the rest of your code — and utilize them in your web apps. 
@@ -173,7 +172,6 @@ Shadow DOM is the ability for a browser to maintain a subtree of dom nodes in a 
 
 
 ### CSS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #### Can you tell me three ways you could include CSS in your document? 
 link tag, style tag, style attribute, @import
@@ -242,24 +240,25 @@ CSS feature that defines the @supports rule, which allow us to wrap CSS in a con
 #### What is the difference between grid (display:grid) and flexbox (display:flex) layouts?
 Grid is meant for page layouts, flex is for general dynamic content placement. Grid is 2 dimensional vs flex is one dimensional (height or width). Grid is layout first, setting containers and making content adapt, flex is content first where the layout adapts.
 
-###JavaScript
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## JavaScript
 
 #### What are the benefits of using js frameworks?
 Syntax sugar, cross browser support, rapid development….
 
 #### How can you include Javascript in a page?
-<script>, <script src=””>,inline 
+\<script\>, \<script src=""\>,inline 
 
 #### What is JSON?
 JavaScript Object Notation is a lightweight data-interchange format.
 
 #### What involvement have you had with Ajax? Can you explain the underlying mechanism?
-------
+
 #### How would you create your own JavaScript class?
-Use a function, new keyword, prototype - This is probably one of the most common ways. You define a normal JavaScript function and then create an object by using the new keyword.
+Use a function, new keyword, **Prototype**
+This is probably one of the most common ways. You define a normal JavaScript function and then create an object by using the new keyword.
+
 ```javascript
-  function Apple (type) {
+function Apple (type) {
     this.type = type;
     this.color = "red";
     this.getInfo = function() {
@@ -277,9 +276,11 @@ alert(apple.getInfo());
 alert(apple.toString());
 ```
 
-Object literals - Literals are shorter way to define objects and arrays in JavaScript. In this case you don't need to (and cannot) create an instance of the class, it already exists. So you simply start using this instance.
+**Object literals**
+Literals are shorter way to define objects and arrays in JavaScript. In this case you don't need to (and cannot) create an instance of the class, it already exists. So you simply start using this instance.
+
 ```javascript
-  var apple = {
+var apple = {
     type: "macintosh",
     color: "red",
     getInfo: function () {
@@ -293,7 +294,9 @@ apple.color = "reddish";
 alert(apple.getInfo());
 ```
 
-Singleton - You can use a function to define a singleton object.
+**Singleton**
+You can use a function to define a singleton object.
+
 ```javascript
   var apple = new function() {
     this.type = "macintosh";
@@ -306,9 +309,10 @@ apple.color = "reddish";
 alert(apple.getInfo());
 ```
 
-ES6 Class
+ES6 **Class**
+
 ```javascript
-  class apple {
+class apple {
   constructor(type, color) {
     this.type = type;
     this.color = color;
@@ -362,10 +366,14 @@ The pop() method removes the last element of an array, and returns that element.
 4) It inherits the execution context and this binding of the scope in which its invoked
 
 #### What is the event loop and how does it work?
-Javascript is single threaded and the event loop is not part of the language spec itself, instead it is part of browser/nodejs architecture built around javascript that allow asynchronous events to execute in context of a single threaded language. This concurrency architecture is based on 4 things, a stack, queue, heap and the event loop. Currently running code is held on the call stack. As functions call other functions the call stack grows, and as they return, the call stack pops. Any events, or asynchronous calls (like setTimeout) are not added to the stack, instead being added to a message queue, waiting to be processed. Objects that are created during execution of a call stack are stored in the heap. The even loop runs constantly checking whether or not the stack is empty. When it is, it pulls the next item from the queue and executes it on the stack. The event loop concept is what allows javascript to be used in a asynchronous environment.
+Javascript is single threaded and the event loop is not part of the language spec itself, instead it is part of browser/nodejs architecture built around javascript that allow asynchronous events to execute in context of a single threaded language. This concurrency architecture is based on 4 things, a stack, queue, heap and the event loop. 
+Currently running code is held on the call stack. As functions call other functions the call stack grows, and as they return, the call stack pops. Any events, or asynchronous calls (like setTimeout) are not added to the stack, instead being added to a message queue, waiting to be processed. 
+Objects that are created during execution of a call stack are stored in the heap. The even loop runs constantly checking whether or not the stack is empty. When it is, it pulls the next item from the queue and executes it on the stack. The event loop concept is what allows javascript to be used in a asynchronous environment.
 
 #### What does setTimeout(someFunction, 0) do and when would you use it?
-It executes the someFunction in the “next” tick of the event loop. Its useful if you want to execute a particular function after the current call stack has completely returned, and the browser has executed other tasks, like re-rendering. For example, if you want to execute a I/O heavy function, but not block other updates to the browser, or when you make a css change and need to read the new calculated position in the browser. The change can be inlined, but the read should be setTimeout 0ed to allow the browser to apply the change in the dom.
+It executes the someFunction in the “next” tick of the event loop. Its useful if you want to execute a particular function after the current call stack has completely returned, and the browser has executed other tasks, like re-rendering. 
+
+For example, if you want to execute a I/O heavy function, but not block other updates to the browser, or when you make a css change and need to read the new calculated position in the browser. The change can be inlined, but the read should be setTimeout 0ed to allow the browser to apply the change in the dom.
 
 #### What is a template literal?
 Template literals are the string with embedded code and variables inside. Template literal allows concatenation and interpolation in much more comprehensive and clear in comparison with prior versions of ECMAScript.
@@ -590,4 +598,8 @@ class VendingMachineItem {
 }
 ```
 
-Follow up questions can be: what happens if you have one large item that takes 2 spaces to store? What methods would you add to manage the inventory? How would you deal with giving change if the machine is limited by the amount of coins? What if we have different items in the same slot?
+#### Follow up questions can be
+What happens if you have one large item that takes 2 spaces to store?
+What methods would you add to manage the inventory?
+How would you deal with giving change if the machine is limited by the amount of coins?
+What if we have different items in the same slot?
