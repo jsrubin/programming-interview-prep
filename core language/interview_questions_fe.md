@@ -95,12 +95,10 @@ Advanced answer: understand and can explain what happens under the hood.
  - New form input types and attributes that will (and in Opera’s case, do) take the hassle out of scripting forms.
 
 #### How many new tags you know in HTML5?
-Tag	| Description |
---- | --- |
-<article>	| Specifies independent, self-contained content, could be a news-article, blog post, forum post, or other articles 
-which can be distributed independently from the rest of the site.
-<aside>	| For content aside from the content it is placed in. The aside content should
-be related to the surrounding content
+| Tag	| Description |
+| --- | --- |
+<article>	| Specifies independent, self-contained content, could be a news-article, blog post, forum post, or other articles which can be distributed independently from the rest of the site.
+<aside>	| For content aside from the content it is placed in. The aside content should be related to the surrounding content
 <bdi>	| For text that should not be bound to the text-direction of its parent elements
 <command>	| A button, or a radiobutton, or a checkbox
 <details>	For describing details about a document, or parts of a document
@@ -108,8 +106,7 @@ be related to the surrounding content
 <figure>	| For grouping a section of
 stand-alone content, could be a video
 <figcaption>	| The caption of the figure section
-<footer>	| For a footer of a document or section, could include the name of the author, the
-date of the document, contact information, or copyright information
+<footer>	| For a footer of a document or section, could include the name of the author, the date of the document, contact information, or copyright information
 <header>	| For an introduction of a document or section, could include navigation
 <hgroup>	| For a section of headings, using <h1> to <h6>, where the largest is the main
 heading of the section, and the others are sub-headings
@@ -120,14 +117,12 @@ heading of the section, and the others are sub-headings
 <ruby>	| For ruby annotation (Chinese notes or characters)
 <rt>	| For explanation of the ruby annotation
 <rp>	| What to show browsers that do not support the ruby element
-<section>	| For a section in a document. Such as chapters, headers, footers, or any
-other sections of the document
+<section>	| For a section in a document. Such as chapters, headers, footers, or any other sections of the document
 <time>	| For defining a time or a date, or both
 <wbr>	| Word break. For defining a line-break opportunity.
 <audio>	| For multimedia content, sounds, music or other audio streams
 <video>	| For video content, such as a movie clip or other video streams
-<source>	| For media resources for media elements, defined inside video or audio
-elements
+<source>	| For media resources for media elements, defined inside video or audio elements
 <embed>	| For embedded content, such as a plug-in
 <track>	| For text tracks used in mediaplayers
 <tel>	| The input is of type telephone number
