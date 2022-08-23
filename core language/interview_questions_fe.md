@@ -2,40 +2,40 @@
 
 These are questions that are about JavaScript concepts where junior engineers should know the basics but senior engineers should be able to go more in depth.
 
-#### Tell me what you know about prototypical inheritance
+### Tell me what you know about prototypical inheritance
 
 **Basic answer:** Inheritance in JS where one object extends another WORKING INSTANCE object. This is the difference between Classical and Prototypical. Classical inheritance uses parent as a blue print to create a new class. JS links to a working object, which can be mutated at runtime. 
 
 **More advanced answer:** Talk about the prototype chain, everything goes to Object which is the only thing that has null as its prototype.
 
-#### Tell me what you know about closures
+### Tell me what you know about closures
 
 **Basic answer**: used to enclose scope
 
 **Advanced answer**: use case examples, returning an object api instead of inner properties
 
-#### What can you tell me about type coercion in JavaScript
+### What can you tell me about type coercion in JavaScript
 **Basic answer**: JavaScript will change one type into another when certain operations are performed.
 
 **Advanced answer**: Implicit vs explicit coercion, only 3 types (to string, to Boolean, to number), triggered by operator (special case, + coerces to string before number)
 
-#### What can you tell me about var x = 1; vs window.x = 1;?
+### What can you tell me about var x = 1; vs window.x = 1;?
 The first is a variable assignment. The variable will be hoisted, but the assignment will happen in line. Window.x is a property assignment.
 
 **Advanced**: talk about flags like deletable, enumerable etc.
 
-#### What is hoisting?
+### What is hoisting?
 allows variables to be initialized before declared
 moves declarations to top
 
-#### What are some examples of things that are hoisted?
+### What are some examples of things that are hoisted?
 var is declared and initialized during hoisting. let and const are only declared during hoisting, not initialized
 
-#### What is 'use strict' mode?
+### What is 'use strict' mode?
 helps ensure more 'secure' code. cannot use undelcared variables
 forces explicit in referencing global vars
 
-#### Tell me what you know about event loop?
+### Tell me what you know about event loop?
 
 **Basic answer**: how JavaScript can run asynchronous apis like setTimeout, ajax, etc.
 
@@ -43,31 +43,31 @@ forces explicit in referencing global vars
 
 **Expert answer**: There are 2 queues. Task and Microtask and can explain the difference.
 
-#### Tell me what you know about Promises
+### Tell me what you know about Promises
 
 **Basic answer**: Explain the API
 
 **Advanced answer**: Can explain how the callbacks are chained and executed.
 
-#### Tell me what you know about Iterators
+### Tell me what you know about Iterators
 
 **Basic answer**: closures that keep track of the current item and index in an enumerable object and whether there is a next item. 
 
 **Advanced answer**: next api that returns object with value and Boolean done. Generators are factories for iterators.
 
-#### What can you tell me about metaprogramming in JS (reflection, introspection, code generation)?
+### What can you tell me about metaprogramming in JS (reflection, introspection, code generation)?
 
 **Basic answer**: Has heard of the concepts
 
 **Advanced answer**: object reflection and intaspection using built in methods like hasOwnProperty or typeOf, instanceOf, keys), or built-ins like eval and try catch. ES6 Symbol, Reflect and Proxy. Can speak about how they are used.
 
-#### What can you tell me about WebComponents?
+### What can you tell me about WebComponents?
 
 **Basic answer**: html way of creating reusable components…polymer
 
 **Advanced answer**: composed of html imports, templates, custom object and shadowDom. Can speak to each concept. Can talk about the lifecycle methods of connectedCallback, disconnectedCallback, adoptedCallback and attributeChangedCallback.
 
-#### Framework specific question…how does frameworks x do y? ex. How does React handle change detection
+### Framework specific question…how does frameworks x do y? ex. How does React handle change detection
 
 **Basic answer**: understand the api of the framework.
 
