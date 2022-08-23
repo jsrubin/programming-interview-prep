@@ -97,48 +97,48 @@ Advanced answer: understand and can explain what happens under the hood.
 #### How many new tags you know in HTML5?
 | Tag	| Description |
 | --- | --- |
-<article>	| Specifies independent, self-contained content, could be a news-article, blog post, forum post, or other articles which can be distributed independently from the rest of the site.
-<aside>	| For content aside from the content it is placed in. The aside content should be related to the surrounding content
-<bdi>	| For text that should not be bound to the text-direction of its parent elements
-<command>	| A button, or a radiobutton, or a checkbox
-<details>	For describing details about a document, or parts of a document
-<summary>	| A caption, or summary, inside the details element
-<figure>	| For grouping a section of
+\<article\>	| Specifies independent, self-contained content, could be a news-article, blog post, forum post, or other articles which can be distributed independently from the rest of the site.
+\<aside\>	| For content aside from the content it is placed in. The aside content should be related to the surrounding content
+\<bdi\>	| For text that should not be bound to the text-direction of its parent elements
+\<command\>	| A button, or a radiobutton, or a checkbox
+\<details\>	For describing details about a document, or parts of a document
+\<summary\>	| A caption, or summary, inside the details element
+\<figure\>	| For grouping a section of
 stand-alone content, could be a video
-<figcaption>	| The caption of the figure section
-<footer>	| For a footer of a document or section, could include the name of the author, the date of the document, contact information, or copyright information
-<header>	| For an introduction of a document or section, could include navigation
-<hgroup>	| For a section of headings, using <h1> to <h6>, where the largest is the main
+\<figcaption\>	| The caption of the figure section
+\<footer\>	| For a footer of a document or section, could include the name of the author, the date of the document, contact information, or copyright information
+\<header\>	| For an introduction of a document or section, could include navigation
+\<hgroup\>	| For a section of headings, using <h1> to <h6>, where the largest is the main
 heading of the section, and the others are sub-headings
-<mark>	| For text that should be highlighted
-<meter>	| For a measurement, used only if the maximum and minimum values are known
-<nav>	| For a section of navigation
-<progress>	| The state of a work in progress
-<ruby>	| For ruby annotation (Chinese notes or characters)
-<rt>	| For explanation of the ruby annotation
-<rp>	| What to show browsers that do not support the ruby element
-<section>	| For a section in a document. Such as chapters, headers, footers, or any other sections of the document
-<time>	| For defining a time or a date, or both
-<wbr>	| Word break. For defining a line-break opportunity.
-<audio>	| For multimedia content, sounds, music or other audio streams
-<video>	| For video content, such as a movie clip or other video streams
-<source>	| For media resources for media elements, defined inside video or audio elements
-<embed>	| For embedded content, such as a plug-in
-<track>	| For text tracks used in mediaplayers
-<tel>	| The input is of type telephone number
-<search>	| The input field is a search field
-<url>	| a URL
-<email>	| One or more email addresses
-<datetime>	| A date and/or time
-<date>	| A date
-<month>	| A month
-<week>	| A week
-<time>	| The input value is of type time
-<datetime-local>	| A local date/time
-<number>	| A number
-<range>	| A number in a given range
-<color>	| A hexadecimal color, like #82345c
-<placeholder>	| Specifies a short hint that describes the expected value of an input field
+\<mark\>	| For text that should be highlighted
+\<meter\>	| For a measurement, used only if the maximum and minimum values are known
+\<nav\>	| For a section of navigation
+\<progress\>	| The state of a work in progress
+\<ruby\>	| For ruby annotation (Chinese notes or characters)
+\<rt\>	| For explanation of the ruby annotation
+\<rp\>	| What to show browsers that do not support the ruby element
+\<section\>	| For a section in a document. Such as chapters, headers, footers, or any other sections of the document
+\<time\>	| For defining a time or a date, or both
+\<wbr\>	| Word break. For defining a line-break opportunity.
+\<audio\>	| For multimedia content, sounds, music or other audio streams
+\<video\>	| For video content, such as a movie clip or other video streams
+\<source\>	| For media resources for media elements, defined inside video or audio elements
+\<embed\>	| For embedded content, such as a plug-in
+\<track\>	| For text tracks used in mediaplayers
+\<tel\>	| The input is of type telephone number
+\<search\>	| The input field is a search field
+\<url\>	| a URL
+\<email\>	| One or more email addresses
+\<datetime\>	| A date and/or time
+\<date\>	| A date
+\<month\>	| A month
+\<week\>	| A week
+\<time\>	| The input value is of type time
+\<datetime-local\>	| A local date/time
+\<number\>	| A number
+\<range\>	| A number in a given range
+\<color\>	| A hexadecimal color, like #82345c
+\<placeholder\>	| Specifies a short hint that describes the expected value of an input field
 
 #### What are the different types of storage in HTML5?
  - LocalStorage – Before HTML5 LocalStores was done with cookies. Cookies are not very good for large amounts of data, because they are passed on by every request to the server, so it was very slow and in-effective.
