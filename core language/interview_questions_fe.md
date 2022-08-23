@@ -2,78 +2,89 @@
 
 These are questions that are about JavaScript concepts where junior engineers should know the basics but senior engineers should be able to go more in depth.
 
-## Tell me what you know about prototypical inheritance
+#### Tell me what you know about prototypical inheritance
 
 **Basic answer:** Inheritance in JS where one object extends another WORKING INSTANCE object. This is the difference between Classical and Prototypical. Classical inheritance uses parent as a blue print to create a new class. JS links to a working object, which can be mutated at runtime. 
 
 **More advanced answer:** Talk about the prototype chain, everything goes to Object which is the only thing that has null as its prototype.
 
-## Tell me what you know about closures
+#### Tell me what you know about closures
 
-Basic answer: used to enclose scope
+**Basic answer**: used to enclose scope
 
-Advanced answer: use case examples, returning an object api instead of inner properties
+**Advanced answer**: use case examples, returning an object api instead of inner properties
 
-## What can you tell me about type coercion in JavaScript
-Basic answer: JavaScript will change one type into another when certain operations are performed.
+#### What can you tell me about type coercion in JavaScript
+**Basic answer**: JavaScript will change one type into another when certain operations are performed.
 
-Advanced answer: Implicit vs explicit coercion, only 3 types (to string, to Boolean, to number), triggered by operator (special case, + coerces to string before number)
+**Advanced answer**: Implicit vs explicit coercion, only 3 types (to string, to Boolean, to number), triggered by operator (special case, + coerces to string before number)
 
-## What can you tell me about var x = 1; vs window.x = 1;?
+#### What can you tell me about var x = 1; vs window.x = 1;?
 The first is a variable assignment. The variable will be hoisted, but the assignment will happen in line. Window.x is a property assignment.
 
-Advanced: talk about flags like deletable, enumerable etc.
+**Advanced**: talk about flags like deletable, enumerable etc.
 
-## Tell me what you know about event loop?
+#### What is hoisting?
+allows variables to be initialized before declared
+moves declarations to top
 
-Basic answer: how JavaScript can run asynchronous apis like setTimeout, ajax, etc.
+#### What are some examples of things that are hoisted?
+var is declared and initialized during hoisting. let and const are only declared during hoisting, not initialized
 
-Advanced answer: its composed of 3 things, heap (shared memory), stack (currently executing code) and queue (code to be executed pushed by asynchronous apis.
+#### What is 'use strict' mode?
+helps ensure more 'secure' code. cannot use undelcared variables
+forces explicit in referencing global vars
 
-Expert answer: There are 2 queues. Task and Microtask and can explain the difference.
+#### Tell me what you know about event loop?
 
-## Tell me what you know about Promises
+**Basic answer**: how JavaScript can run asynchronous apis like setTimeout, ajax, etc.
 
-Basic answer: Explain the API
+**Advanced answer**: its composed of 3 things, heap (shared memory), stack (currently executing code) and queue (code to be executed pushed by asynchronous apis.
 
-Advanced answer: Can explain how the callbacks are chained and executed.
+**Expert answer**: There are 2 queues. Task and Microtask and can explain the difference.
 
-## Tell me what you know about Iterators
+#### Tell me what you know about Promises
 
-Basic answer: closures that keep track of the current item and index in an enumerable object and whether there is a next item. 
+**Basic answer**: Explain the API
 
-Advanced answer: next api that returns object with value and Boolean done. Generators are factories for iterators.
+**Advanced answer**: Can explain how the callbacks are chained and executed.
 
-## What can you tell me about metaprogramming in JS (reflection, introspection, code generation)?
+#### Tell me what you know about Iterators
 
-Basic answer: Has heard of the concepts
+**Basic answer**: closures that keep track of the current item and index in an enumerable object and whether there is a next item. 
 
-Advanced answer: object reflection and intaspection using built in methods like hasOwnProperty or typeOf, instanceOf, keys), or built-ins like eval and try catch. ES6 Symbol, Reflect and Proxy. Can speak about how they are used.
+**Advanced answer**: next api that returns object with value and Boolean done. Generators are factories for iterators.
 
-## What can you tell me about WebComponents?
+#### What can you tell me about metaprogramming in JS (reflection, introspection, code generation)?
 
-Basic answer: html way of creating reusable components…polymer
+**Basic answer**: Has heard of the concepts
 
-Advanced answer: composed of html imports, templates, custom object and shadowDom. Can speak to each concept. Can talk about the lifecycle methods of connectedCallback, disconnectedCallback, adoptedCallback and attributeChangedCallback.
+**Advanced answer**: object reflection and intaspection using built in methods like hasOwnProperty or typeOf, instanceOf, keys), or built-ins like eval and try catch. ES6 Symbol, Reflect and Proxy. Can speak about how they are used.
 
-## Framework specific question…how does frameworks x do y? ex. How does React handle change detection
+#### What can you tell me about WebComponents?
 
-Basic answer: understand the api of the framework.
+**Basic answer**: html way of creating reusable components…polymer
 
-Advanced answer: understand and can explain what happens under the hood.
+**Advanced answer**: composed of html imports, templates, custom object and shadowDom. Can speak to each concept. Can talk about the lifecycle methods of connectedCallback, disconnectedCallback, adoptedCallback and attributeChangedCallback.
+
+#### Framework specific question…how does frameworks x do y? ex. How does React handle change detection
+
+**Basic answer**: understand the api of the framework.
+
+**Advanced answer**: understand and can explain what happens under the hood.
 
 # GENERAL QUESTIONS
 
 ## General HTML
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 #### When do you think the use of HTML tables is appropriate?
  - Only for displaying tabular data.
 
-#### What is the main difference between a div and a span tag?
+#### <span style="color:red">What is the main difference between a div and a span tag?</span>
  - One is a block level element while the other is an inline level element. Semantically, a span can exist inside of a div, but a div cannot exist inside of a span.
 
 #### What is the label tag used for?
- - The <label> tag defines a label for an <input> element.
+ - The \<label\> tag defines a label for an \<input\> element.
 
 #### What is the difference between the OL and UL elements?
  - Ordered vs. Unordered lists.
@@ -82,16 +93,16 @@ Advanced answer: understand and can explain what happens under the hood.
  - Class=”class1 class2”
 
 #### What are doctypes and why are they important?
- - The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+ - The \<!DOCTYPE\> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
 
 ## HTML5 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 #### What is the difference between HTML and HTML5?
  - HTML5 is nothing more then upgraded version of HTML where in HTML5 Lot of new future like Video, Audio/mp3, date select function , placeholder , Canvas, 2D/3D Graphics, Local SQL Database added so that no need to do external plugin like Flash player or other library.
 
 #### What are some advantages of HTML5?
  - Cleaner markup
- - Additional semantics of new elements like <header>, <nav>, and <time>
+ - Additional semantics of new elements like \<header\>, \<nav\>, and \<time\>
  - New form input types and attributes that will (and in Opera’s case, do) take the hassle out of scripting forms.
 
 #### How many new tags you know in HTML5?
@@ -101,15 +112,13 @@ Advanced answer: understand and can explain what happens under the hood.
 \<aside\>	| For content aside from the content it is placed in. The aside content should be related to the surrounding content
 \<bdi\>	| For text that should not be bound to the text-direction of its parent elements
 \<command\>	| A button, or a radiobutton, or a checkbox
-\<details\>	For describing details about a document, or parts of a document
+\<details\>	| For describing details about a document, or parts of a document
 \<summary\>	| A caption, or summary, inside the details element
-\<figure\>	| For grouping a section of
-stand-alone content, could be a video
+\<figure\>	| For grouping a section of stand-alone content, could be a video
 \<figcaption\>	| The caption of the figure section
 \<footer\>	| For a footer of a document or section, could include the name of the author, the date of the document, contact information, or copyright information
 \<header\>	| For an introduction of a document or section, could include navigation
-\<hgroup\>	| For a section of headings, using \<h1\> to \<h6\>, where the largest is the main
-heading of the section, and the others are sub-headings
+\<hgroup\>	| For a section of headings, using \<h1\> to \<h6\>, where the largest is the main heading of the section, and the others are sub-headings
 \<mark\>	| For text that should be highlighted
 \<meter\>	| For a measurement, used only if the maximum and minimum values are known
 \<nav\>	| For a section of navigation
@@ -140,11 +149,9 @@ heading of the section, and the others are sub-headings
 \<color\>	| A hexadecimal color, like #82345c
 \<placeholder\>	| Specifies a short hint that describes the expected value of an input field
 
-#### What are the different types of storage in HTML5?
- - LocalStorage – Before HTML5 LocalStores was done with cookies. Cookies are not very good for large amounts of data, because they are passed on by every request to the server, so it was very slow and in-effective.
- - In HTML5, the data is NOT passed on by every server request, but used ONLY when asked for. It is possible to store large amounts of data without affecting the website’s performance.and The data is stored in different areas for different websites, and a website can only access data stored by itself.
- - And for creating localstores just need to call localStorage object like below we are storing name and address
-SessionStorage – The sessionStorage object stores the data for one session. The data is deleted when the user closes the browser window. 
+#### <span style="color:red">What are the different types of storage in HTML5?</span>
+ - **LocalStorage** – Before HTML5 LocalStores was done with cookies. Cookies are not very good for large amounts of data, because they are passed on by every request to the server, so it was very slow and in-effective. In HTML5, the data is NOT passed on by every server request, but used ONLY when asked for. It is possible to store large amounts of data without affecting the website’s performance.and The data is stored in different areas for different websites, and a website can only access data stored by itself. And for creating localstores just need to call localStorage object like below we are storing name and address
+ - **SessionStorage** – The sessionStorage object stores the data for one session. The data is deleted when the user closes the browser window. 
 
 #### What is the difference between HTMl5 Application cache and regular HTML browser cache?
 The new HTML5 specification allows browsers to prefetch some or all of a website assets such as HTML files, images, CSS, JavaScript, and so on, while the client is connected. It is not necessary for the user to have accessed this content previously, for fetching this content. In other words, application cache can prefetch pages that have not been visited at all and are thereby unavailable in the regular browser cache. Prefetching files can speed up the site’s performance, though you are of course using bandwidth to download those files initially.
@@ -167,13 +174,13 @@ Custom Elements, HTML Templates, Shadow DOM, HTML Imports
 **adoptedCallback**: Invoked each time the custom element is moved to a new document.
 attributeChangedCallback: Invoked each time one of the custom element's attributes is added, removed, or changed.
 
-#### What is the Shadow DOM?
+#### <span style="color:red">What is the Shadow DOM?</span>
 Shadow DOM is the ability for a browser to maintain a subtree of dom nodes in a separate from the main dom tree allowing encapsulation and sandboxing of the code.
 
 
 ### CSS
 
-#### Can you tell me three ways you could include CSS in your document? 
+#### <span style="color:red">Can you tell me three ways you could include CSS in your document? </span>
 link tag, style tag, style attribute, @import
 
 #### Given a block level element with a fixed (and known) width, how would you center it horizontally on the page?
@@ -192,7 +199,7 @@ Specificity is a type of weighting that has a bearing on how your cascading styl
 #### Why should the !important CSS declaration be avoided? How can it generally be avoided?
 !important overrides css specificity and can only be overridden by another !important tag further in the code.  It can be avoided by writing clean and concise css code.
 
-#### What is the difference between display:none and visibility:hidden?
+#### <span style="color:red">What is the difference between display:none and visibility:hidden?</span>
 Visibility just makes the content invisible while retaining all space, while display none will collapse the space where the element should be rendered.
 
 #### Which one of the above can only be accessible via JS? (Trick question)
@@ -246,7 +253,7 @@ Grid is meant for page layouts, flex is for general dynamic content placement. G
 Syntax sugar, cross browser support, rapid development….
 
 #### How can you include Javascript in a page?
-\<script\>, \<script src=""\>,inline 
+\<script\>, \<script src=""\>, inline 
 
 #### What is JSON?
 JavaScript Object Notation is a lightweight data-interchange format.
@@ -322,40 +329,45 @@ class apple {
 const macintoshApple = new Apple(‘macintosh’, ‘red’);
 ```
   
-#### How would you extend a javascript class?
+#### <span style="color:red">How would you extend a javascript class?</span>
 The prototype property or extends property in es6.
 
-#### What is the difference between class and prototypical inheritance?
-Class Inheritance, class is like a blueprint — a description of the object to be created. Classes inherit from classes and create subclass relationships: hierarchical class taxonomies. Prototypal Inheritance a prototype is a working object instance. Objects inherit directly from other objects.
+#### <span style="color:red">What is the difference between class and prototypical inheritance?</span>
+ - **Class Inheritance**, class is like a blueprint — a description of the object to be created. Classes inherit from classes and create subclass relationships: hierarchical class taxonomies.
+ - **Prototypal Inheritance** a prototype is a working object instance. Objects inherit directly from other objects.
 
-#### How would change the scope of a function (i.e. how would you change what the keyword ‘this’ is referring to within it)?
+#### <span style="color:red">How would change the scope of a function (i.e. how would you change what the keyword ‘this’ is referring to within it)?</span>
 Bind, call, apply, that.
 
-#### What is an anonymous function?
+#### <span style="color:red">What is the difference between Bind vs Call?</span>
+ - Bind returns a function with passed in scope
+ - Call does a Bind and also calls the function
+
+#### <span style="color:red">What is an anonymous function?</span>
 Anonymous functions are functions that are dynamically declared at runtime. They’re called anonymous functions because they aren’t given a name in the same way as normal functions.
 
 #### How can you make a link open in a new window using javascript?
 Window.open
 
-#### What is the difference between setTimeout and setInterval?
+#### <span style="color:red">What is the difference between setTimeout and setInterval?</span>
 One delays the execution of a function, while the other executes a function continuously in an interval.
 
 #### How can a timeout or interval be cancelled?
 clearInterval()
 
-#### What is a closure, and why would you use one?
+#### <span style="color:red">What is a closure, and why would you use one?</span>
 A closure, in JavaScript, can simply be described as a retained scope;  The benefit of a closure is in the fact that it retains the scope (the “scope chain”) of the outer (or “parent”) execution context. Can be used to solve looping with functions, 
 
 #### How do you stop an event from bubbling further up the DOM?
 event.stopPropagation()
 
 #### How do you prevent a browser from following a link when clicked on?
-event.preventDefault ()
+event.preventDefault()
 
 #### How do you add new elements to the DOM?
 createElement, appendChild
 
-#### What do Array.push and Array.pop do?
+#### <span style="color:red">What do Array.push and Array.pop do?</span>
 The push() method adds new items to the end of an array, and returns the new length.
 The pop() method removes the last element of an array, and returns that element.
 
@@ -375,7 +387,7 @@ It executes the someFunction in the “next” tick of the event loop. Its usefu
 
 For example, if you want to execute a I/O heavy function, but not block other updates to the browser, or when you make a css change and need to read the new calculated position in the browser. The change can be inlined, but the read should be setTimeout 0ed to allow the browser to apply the change in the dom.
 
-#### What is a template literal?
+#### <span style="color:red">What is a template literal?</span>
 Template literals are the string with embedded code and variables inside. Template literal allows concatenation and interpolation in much more comprehensive and clear in comparison with prior versions of ECMAScript.
 
 #### What is Spread Operator and where can they be used?
