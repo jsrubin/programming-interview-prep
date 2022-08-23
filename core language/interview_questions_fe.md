@@ -147,7 +147,7 @@ heading of the section, and the others are sub-headings
 SessionStorage – The sessionStorage object stores the data for one session. The data is deleted when the user closes the browser window. 
 
 #### What is the difference between HTMl5 Application cache and regular HTML browser cache?
- - The new HTML5 specification allows browsers to prefetch some or all of a website assets such as HTML files, images, CSS, JavaScript, and so on, while the client is connected. It is not necessary for the user to have accessed this content previously, for fetching this content. In other words, application cache can prefetch pages that have not been visited at all and are thereby unavailable in the regular browser cache. Prefetching files can speed up the site’s performance, though you are of course using bandwidth to download those files initially.
+The new HTML5 specification allows browsers to prefetch some or all of a website assets such as HTML files, images, CSS, JavaScript, and so on, while the client is connected. It is not necessary for the user to have accessed this content previously, for fetching this content. In other words, application cache can prefetch pages that have not been visited at all and are thereby unavailable in the regular browser cache. Prefetching files can speed up the site’s performance, though you are of course using bandwidth to download those files initially.
 
 #### What does the sandbox attribute do on an iframe element?
 Sandbox attribute enables extra restrictions on the content that can appear in the inline frame. The value of the attribute can either be an empty string (all the restrictions are applied), or a space-separated list of tokens that lift particular restrictions.
@@ -174,6 +174,7 @@ Shadow DOM is the ability for a browser to maintain a subtree of dom nodes in a 
 
 ### CSS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 #### Can you tell me three ways you could include CSS in your document? 
 link tag, style tag, style attribute, @import
 
