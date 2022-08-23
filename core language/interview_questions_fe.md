@@ -108,7 +108,7 @@ stand-alone content, could be a video
 \<figcaption\>	| The caption of the figure section
 \<footer\>	| For a footer of a document or section, could include the name of the author, the date of the document, contact information, or copyright information
 \<header\>	| For an introduction of a document or section, could include navigation
-\<hgroup\>	| For a section of headings, using <h1> to <h6>, where the largest is the main
+\<hgroup\>	| For a section of headings, using \<h1\> to \<h6\>, where the largest is the main
 heading of the section, and the others are sub-headings
 \<mark\>	| For text that should be highlighted
 \<meter\>	| For a measurement, used only if the maximum and minimum values are known
@@ -154,13 +154,15 @@ Sandbox attribute enables extra restrictions on the content that can appear in t
 
 ### Web Components
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-What are Web Components and why would we use them?
+
+#### What are Web Components and why would we use them?
 Web Components is a suite of different technologies allowing you to create reusable custom elements — with their functionality encapsulated away from the rest of your code — and utilize them in your web apps. 
 
 #### What are the different technologies that make up Web Components?
 Custom Elements, HTML Templates, Shadow DOM, HTML Imports
 
 #### What are the lifecycle methods of a Custom Element?
+
 **connectedCallback**: Invoked each time the custom element is appended into a document-connected element. This will happen each time the node is moved, and may happen before the element's contents have been fully parsed.
 **disconnectedCallback**: Invoked each time the custom element is disconnected from the document's DOM.
 **adoptedCallback**: Invoked each time the custom element is moved to a new document.
@@ -170,7 +172,7 @@ attributeChangedCallback: Invoked each time one of the custom element's attribut
 Shadow DOM is the ability for a browser to maintain a subtree of dom nodes in a separate from the main dom tree allowing encapsulation and sandboxing of the code.
 
 
-CSS
+### CSS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #### Can you tell me three ways you could include CSS in your document? 
 link tag, style tag, style attribute, @import
