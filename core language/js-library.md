@@ -21,6 +21,18 @@
 - React Design
   - composition
   - lazy init
+  - seperate business logic
+  - manage state
+  - auth
+  - communication with server
+
+### Functional vs Object Oriented Design
+- What is the difference and are they achieved in Javascript?
+  - OOD   =>        Prototypal Inheritance
+    Functional =>   Higher-Order Functions (HOF)
+                    Pure Functions
+                    First-Class Functions = functions as variable, like expression of any type
+                    Declartive
 
 ### Data-types
 
